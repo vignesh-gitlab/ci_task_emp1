@@ -1,0 +1,65 @@
+Task Setup:
+Database Name: ci_task_emp
+
+SQL file is attached in project root folder to import tables.
+
+URL: http://localhost/ci_task_emp1/
+
+Login Details:
+
+Admin:
+username: admin@yopmail.com
+password: admin
+
+Employees:
+
+User1:
+username: user1@yopmail.com
+password: user1
+
+User2:
+username: user2@yopmail.com
+password: user2
+
+
+
+Module 1 – User Registration & Login
+
+User Registration:
+- Email validation and uniqueness are checked.
+- Password is stored in hashed format using a hash function.
+- Form Validation library is used to validate inputs.
+User Login:
+- A hybrid approach is used to validate login details.
+- JWT token is used for authentication, and session is used to maintain the user state.
+Bootstrap:
+- Bootstrap v5.3 is used for basic UI design.
+
+Module 2 – Project & Task Management
+Admin:
+- Admin can create and view projects and tasks.
+Admin & Employee:
+- Employees can create, view tasks, and update their own task status.
+- Admin and employees can communicate using comments in the Task module.
+- Task listing page AJAX is used to listing and paginate without loading page.
+
+Module 3 – Leave Tracker
+- Employees can apply for leave with from date, to date, and reason. Form validation is applied.
+- Past dates are not allowed, a maximum of 2 leaves can be applied, and overlapping dates are checked.
+- Leave can be applied with duration; weekends are excluded and leave count is calculated automatically.
+- Employees can view their applied leaves on the My Leaves page.
+
+Module 4 – Dashboard
+Admin:
+- Dashboard shows total tasks, pending tasks, and completed tasks. Tasks are displayed based on priority.
+Employee:
+- Dashboard shows own tasks, pending tasks, completed tasks, and leave taken for the current month. Tasks are displayed based on priority.
+
+Notes:
+CodeIgniter 3.1.6 is used with MVC architecture.
+Form validation is implemented wherever required.
+Pagination is applied on the Tasks listing page.
+Proper error handling, Bootstrap styling, and optimized SQL queries are used where needed.
+PHP version is 7.3.27 and mysql version is 5.0.12.
+
+
